@@ -1,14 +1,125 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Simple E-Commerce Site</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+    }
+
+    header{
+      background:#222;
+      color:white;
+      padding:15px;
+      text-align:center;
+    }
+
+    .container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:20px;
+      padding:30px;
+    }
+
+    .product{
+      background:white;
+      width:250px;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 2px 10px rgba(0,0,0,0.2);
+      transition:0.3s;
+    }
+
+    .product:hover{
+      transform:scale(1.03);
+    }
+
+    .product img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .product-content{
+      padding:15px;
+      text-align:center;
+    }
+
+    .product h3{
+      margin-bottom:10px;
+    }
+
+    .price{
+      color:green;
+      font-size:20px;
+      margin-bottom:10px;
+    }
+
+    button{
+      background:#ff6600;
+      color:white;
+      border:none;
+      padding:10px 15px;
+      border-radius:5px;
+      cursor:pointer;
+    }
+
+    button:hover{
+      background:#e65c00;
+    }
+  </style>
+</head>
+
 <body>
-	<h1 style="color: violet; font-size: 40px;" align="center">Ghattamaneni Mahesh Babu (born 9 August 1975) is an Indian actor, 
-producer and philanthropist, voice actor, who works in Telugu cinema. He is one of the highest-paid actors in Indian cinema and has been featured in
-Forbes India's Celebrity 100 list from 2012 to 2025.[1][2] Referred to in the media as the Superstar,[3] he appeared in over 30 
-films and has been a recipient of several accolades including, nine Nandi Awards, five Filmfare Awards South and four SIIMA Awards. [citation needed]
-The younger son of veteran actor Krishna, Babu made his debut as a child artist in a cameo role in a Telugu film called Needa (1979),
-at the age of four. He went on to act as a child artist in the films Sankharavam (1987), Bazaar Rowdy, Mugguru Kodukulu (both 1988) 
-and Gudachari 117 (1989). He played a dual role in the film Koduku Diddina Kapuram (1989). Babu then appeared in Balachandrudu and Anna Thammudu (both 1990).
-He made his debut as a lead actor with Rajakumarudu (1999) which won him the Nandi Award for Best Male Debut.[4]</h1>
-	
-	
+
+  <header>
+    <h1>My E-Commerce Store</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Product 1 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Shoes">
+      <div class="product-content">
+        <h3>Running Shoes</h3>
+        <p class="price">$49.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Watch">
+      <div class="product-content">
+        <h3>Smart Watch</h3>
+        <p class="price">$89.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9" alt="Phone">
+      <div class="product-content">
+        <h3>Mobile Phone</h3>
+        <p class="price">$299.99</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+
 </body>
 </html>
